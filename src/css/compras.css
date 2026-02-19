@@ -1,0 +1,26 @@
+body {
+    font-family: "Martian Mono", monospace;
+    margin: 0;
+}
+
+html.claro body {
+    background-color: rgb(244, 244, 244);
+}
+
+html.oscuro body {
+    background-color: rgb(26, 23, 23);
+}
+
+.contenido {
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+html.claro .contenido,.bd_error {
+    color: black;
+}
+
+html.oscuro .contenido,.bd_error {
+    color: white;
+}

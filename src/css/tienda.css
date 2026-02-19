@@ -1,0 +1,136 @@
+body {
+    font-family: "Martian Mono", monospace;
+    margin: 0;
+}
+
+html.claro body {
+    background-color: rgb(244, 244, 244);
+}
+
+html.oscuro body {
+    background-color: rgb(26, 23, 23);
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    align-items: center;
+
+
+    .botonesAdmin {
+        display: flex;
+        flex-direction: row;
+
+        button {
+            font-family: "Martian Mono", monospace;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        button:hover {
+            background-color: rgb(211, 31, 31);
+        }
+    }
+
+
+    .productos {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 50px;
+        
+        
+        .producto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            max-width: 250px;
+            background-color: rgb(158, 58, 58);
+
+            .album_name {
+                margin-top: 0;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+            .album_img {
+                width: 250px;
+            }
+
+            .album_price {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .botones {
+                width: 100%;
+
+                button {
+                    font-weight: bold;
+                    padding: 5px 0;
+                    margin-bottom: 5px;
+                    width: 100%;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background-color: rgb(211, 31, 31);
+                }
+            }
+        }
+    }
+}
+
+html.claro .contenido {
+    color: black;
+
+    .producto {
+        border: 2px solid black;
+    }
+}
+
+html.oscuro .contenido {
+    color: white;
+
+    .producto {
+        border: 2px solid white;
+    }
+}
+
+html.claro .bd_error {
+    color: black;
+}
+
+html.oscuro .bd_error {
+    color: white;
+}
+
+
+@media (min-width: 0px) and (max-width: 650px) {
+    .contenido {
+        .productos {
+            grid-template-columns: auto;
+        }
+    }
+}
+
+@media (min-width: 650px) and (max-width: 950px) {
+    .contenido .productos {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 1270px) {
+    .contenido {
+        .productos {
+            grid-template-columns: auto auto auto auto;
+        }
+    }
+}

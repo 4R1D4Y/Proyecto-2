@@ -1,0 +1,80 @@
+body {
+    font-family: "Martian Mono", monospace;
+    margin: 0;
+}
+
+html.claro body {
+    background-color: rgb(244, 244, 244);
+}
+
+html.oscuro body {
+    background-color: rgb(26, 23, 23);
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+    form {
+        padding: 30px;
+        width: 250px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(158, 58, 58);
+
+        label {
+            padding: 20px 0;
+
+            p {
+                margin: 0;
+                padding: 5px 0;
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            input {
+                padding: 10px 0;
+                width: 100%;
+            }
+        }
+
+        button {
+            font-weight: bold;
+            margin: 10px 0;
+            padding: 10px 0;
+            cursor: pointer;
+            width: 100%;
+        }
+    }
+}
+
+
+html.claro form {
+    color: black;
+    border: 2px solid black;
+}
+
+html.oscuro form {
+    color: white;
+    border: 2px solid white;
+}
+
+html.claro ul {
+    color: black;
+}
+
+html.oscuro ul{
+    color: white;
+}
+
+html.claro .bd_error {
+    color: black;
+}
+
+html.oscuro .bd_error {
+    color: white;
+}

@@ -1,0 +1,68 @@
+body {
+    font-family: "Martian Mono", monospace;
+    margin: 0;
+}
+
+.añadirProducto {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    min-width: 250px;
+    max-width: 325px;
+
+    form {
+        
+        label {
+            display: flex;
+            flex-direction: column;
+            padding: 5px 0;
+
+        }
+    }
+    
+}
+
+html.claro body {
+    background-color: rgb(244, 244, 244);
+}
+
+html.oscuro body {
+    background-color: rgb(26, 23, 23);
+}
+
+html.claro h1 {
+    color: black;
+}
+
+html.oscuro h1 {
+    color: white;
+}
+
+
+html.claro form {
+    color: black;
+}
+
+html.oscuro form {
+    color: white;
+}
+
+
+html.claro ul {
+    color: black;
+}
+
+html.oscuro ul {
+    color: white;
+}
+
+
+html.claro .bd_error {
+    color: black;
+}
+
+html.oscuro .bd_error {
+    color: white;
+}

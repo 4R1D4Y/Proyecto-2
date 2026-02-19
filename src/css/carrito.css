@@ -1,0 +1,108 @@
+body {
+    font-family: "Martian Mono", monospace;
+    margin: 0;
+}
+
+html.claro body {
+    background-color: rgb(244, 244, 244);
+}
+
+html.oscuro body {
+    background-color: rgb(26, 23, 23);
+}
+
+.mostrarCarrito {
+    padding: 20px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+
+html.claro .mostrarCarrito {
+    color: black;
+}
+
+html.oscuro .mostrarCarrito {
+    color: white;
+}
+
+#mostrar_carrito {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+html.claro th,td {
+    border-color: black;
+}
+
+html.oscuro th,td {
+    border-color: white;
+}
+
+
+@media (max-width: 540px) {
+
+     table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead {
+        display: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        background: #fafafa;
+        border-radius: 8px;
+    }
+
+    html.claro tr {
+        border-color: black;
+        background-color: rgb(244, 244, 244);
+    }
+
+    html.oscuro tr {
+        border-color: white;
+        background-color: rgb(26, 23, 23);
+    }
+
+    td {
+        border: none;
+        padding: 6px 0;
+        font-size: 15px;
+    }
+
+    td::before {
+        content: attr(data-label) " ";
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        width: 130px;
+        color: #555;
+    }
+
+    html.claro td::before {
+        color: black;
+    }
+
+    html.oscuro td::before {
+        color: white;
+    }
+
+    td form button {
+        width: 100%;
+        margin: 4px 0;
+    }
+}

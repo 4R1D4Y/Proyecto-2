@@ -1,0 +1,54 @@
+body {
+    font-family: "Martian Mono", monospace;
+    margin: 0;
+}
+
+html.claro body {
+    background-color: rgb(244, 244, 244);
+}
+
+html.oscuro body {
+    background-color: rgb(26, 23, 23);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    width: 250px;
+
+    label {
+        padding: 10px 0;
+
+        p {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        select {
+            font-weight: bold;
+            padding: 10px 20px;
+            width: 100%;
+            cursor: pointer;
+            
+        }
+    }
+
+    input[type="submit"] {
+        font-weight: bold;
+        margin: 10px 0;
+        padding: 10px 40px;
+        cursor: pointer;
+    }
+}
+
+html.claro form {
+    color: black;
+}
+
+html.oscuro form {
+    color: white;
+}
